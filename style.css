@@ -1,0 +1,44 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.inputbudget {
+    margin: auto;
+    background-color: aqua;
+    width: 60%;
+    border: 2px solid blue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 25px 10px;
+    gap: 5px 0px;
+}
+
+.expense-container {
+    margin: 5px auto;
+    background-color: aqua;
+    width: 60%;
+    border: 2px solid blue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    justify-content: center;
+    padding: 25px 10px;
+    gap: 5px 0px;
+}
+
+.output {
+    margin: 5px auto;
+    background-color: aqua;
+    width: 60%;
+    border: 2px solid blue;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 10px;
+    gap: 5px 0px;
+}
