@@ -45,7 +45,6 @@ addExpenseButton.addEventListener("click", function() {
         return total + expenses.amountprop;
     }, 0);
     var total = parseFloat(totalBudget.value);
-    console.log(total)
     expenseOutput.innerText = sum; 
     balanceOutput = total - sum;
     balance.innerText = balanceOutput;
@@ -74,6 +73,7 @@ function createExpensesRow(expense) {
     var editDeleteCell = document.createElement("td");
     var editButton = document.createElement("button");
     editButton.textContent = "Edit";
+    editButton.classList.add("edit");
     editButton.addEventListener("click", function() {
         console.log("Edit expense:", expense);
     });
@@ -82,7 +82,7 @@ function createExpensesRow(expense) {
     var deleteButton = document.createElement("button");
     deleteButton.textContent = "Detele";
     deleteButton.addEventListener("click", function() {
-        // console.log("delete expenses:", expenses);
+        
         balance.innerText = balanceOutput + expense.amountprop;
         expenseOutput.innerText = parseFloat(expenseOutput.innerText) - expense.amountprop;
         
