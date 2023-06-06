@@ -1,40 +1,53 @@
+:root {
+    --main-color: #302d43;
+    --background: #3a355bf7;
+    --secondary: #cd4ff7;
+    --blue: #6953f7;
+}
+
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     font-family: sans-serif;
+    color: #ffffff;
 }
 
-h2 {
-    color: #2a84c0;
-}
+
 body {
-    background-color: #FEDEFF;
+    background-color: var(--background);
 }
 
 .input {
+    background-color: rgb(107, 107, 107);
     display: block;
     width: 100%;
     padding: 8px;
-    border: 1px solid #d0d0d0;
+    border: 1px solid wheat;
     border-radius: 5px;
     margin-bottom: 4px;
 }
+.input::placeholder {
+    color: #ffffff;
+}
+.input:focus {
+    border-color: var(--secondary);
+}
 
 button {
-    background-color: #587ef4;
+    background-color: var(--secondary);
     border: none;
     color: #ffffff;
-    padding: 8px 18px;
+    padding: 8px 16px;
     border-radius: 5px;
-
+    cursor: pointer;
 }
 
 .inputbudget {
     margin: 10px auto 0px;
-    background-color: #B9F3FC;
+    background-color: var(--main-color);
     width: 60%;
-    border: 2px solid blue;
+    border: 2px solid #cd4ff7;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -46,9 +59,9 @@ button {
 
 .expense-container {
     margin: 5px auto;
-    background-color: #B9F3FC;
+    background-color: var(--main-color);
     width: 60%;
-    border: 2px solid blue;
+    border: 2px solid #cd4ff7;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -61,9 +74,9 @@ button {
     font-weight: bold;
     color: #2a84c0;
     margin: 5px auto;
-    background-color: #B9F3FC;
+    background-color: var(--main-color);
     width: 60%;
-    border: 2px solid blue;
+    border: 2px solid #cd4ff7;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -77,9 +90,9 @@ button {
     font-weight: bold;
     text-align: center;
     margin: 5px auto;
-    background-color: #B9F3FC;
-    width: 60%;
-    border: 2px solid blue;
+    background-color: var(--main-color);
+    width: 60%;     
+    border: 2px solid #cd4ff7;
     border-radius: 10px;
     padding: 15px 10px;
 }
@@ -89,6 +102,10 @@ button {
 }
 @media screen  and (max-width: 580px){
     .expense-table, .inputbudget, .expense-container, .output {
-        width: 95%;
+        width: 97%;
+    }
+    .expense-table {
+        padding: 15px 0px;
+        font-size: 15px;
     }
 }

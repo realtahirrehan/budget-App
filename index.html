@@ -12,14 +12,14 @@
     <body>
         <form class="inputbudget" name="budget" onsubmit="getBudget(); return false";>
             <h2>Budget</h2>
-            <input class="input" type="number" name="budget" id="get" placeholder="Enter total Budget" required>
+            <input class="input" type="number" name="budget" id="get" placeholder="Enter Total Budget" required>
             <button type="submit">Set Budget</button>
         </form>
 
         <div class="expense-container">
             <h2>Add Expenses</h2> 
             <select class="input" name="category" id="category" required>
-                <option value="">Choose Category</option> 
+                <option value="">--Choose Category--</option> 
                 <option value="Food">Food</option>
                 <option value="Bills">Bills</option>
                 <option value="Clothes">Clothes</option>
@@ -29,8 +29,8 @@
                 <option value="Loan">Loan</option>
                 <option value="Education">Education</option>
             </select> 
-            <input class="input" type="text" name="" id="description" placeholder="description" required> 
-            <input class="input" type="number" name="" id="amount" placeholder="amount" required>
+            <input class="input" type="text" name="" id="description" placeholder="Enter Description" required> 
+            <input class="input" type="number" name="" id="amount" placeholder="Enter Amount" required>
             <input class="input" type="date" name="" id="date" required> 
             <button id="add-expense-button">Add Expense</button>
         </div>
